@@ -1,0 +1,12 @@
+[Unit]
+Description=ODROID XU4 Fan Controller
+After=syslog.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/bin/odroid-adaptive-fan
+
+[Install]
+WantedBy=multi-user.target
